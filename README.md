@@ -4,15 +4,17 @@ We implemented a deep neural network to predict human actions by modifying the g
 
 # Datasets Used
 
-https://www.crcv.ucf.edu/data/UCF_YouTube_Action.php
+1. https://www.crcv.ucf.edu/data/UCF_YouTube_Action.php
 
-UCF11 Dataset (or UCF Youtube Action Dataset): contains 11 action categories: basketball shooting, biking/cycling, diving, golf swinging, horse back riding, soccer juggling, swinging, tennis swinging, trampoline jumping, volleyball spiking, and walking with a dog.
-https://www.crcv.ucf.edu/data/UCF101.php
+    UCF11 Dataset (or UCF Youtube Action Dataset): contains 11 action categories: basketball shooting, biking/cycling, diving, golf swinging, horse back riding, soccer juggling, swinging, tennis swinging, trampoline jumping, volleyball spiking, and walking with a dog.<br>
 
-UCF101 Dataset: "With 13320 videos from 101 action categories, UCF101 gives the largest diversity in terms of actions and with the presence of large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc, it is the most challenging data set to date."
-http://dipersec.kingston.ac.uk/G3D/G3D.html
+2. https://www.crcv.ucf.edu/data/UCF101.php
 
-D3G Dataset: G3D dataset contains a range of gaming actions captured with Microsoft Kinect. The Kinect enabled us to record synchronised video, depth and skeleton data. The dataset contains 10 subjects performing 20 gaming actions, from which we selected 7 categories: punch right, punch left, kick right, kick left, wave, flap arms and clap.
+    UCF101 Dataset: "With 13320 videos from 101 action categories, UCF101 gives the largest diversity in terms of actions and with the presence of large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc, it is the most challenging data set to date."<br>
+
+3. http://dipersec.kingston.ac.uk/G3D/G3D.html
+
+    D3G Dataset: G3D dataset contains a range of gaming actions captured with Microsoft Kinect. The Kinect enabled us to record synchronised video, depth and skeleton data. The dataset contains 10 subjects performing 20 gaming actions, from which we selected 7 categories: punch right, punch left, kick right, kick left, wave, flap arms and clap.
 
 ## Results
 We were able to achieve a 94.87% accuracy on D3G dataset, 74.24% accuracy on UCF11 dataset, and 64.55% accuracy on UCF101 dataset.
