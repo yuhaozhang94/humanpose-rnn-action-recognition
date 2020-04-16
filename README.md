@@ -171,3 +171,12 @@ Our project was a great example of Transfer Learning. The model trained previous
 One advantage of our model for human action recognition was that it extracted only the spatial and temporal information of the human pose, thus excluding the background noises. It does not work well, as we had observed, on frames where the human subject was not in the center or was partially blocked.
 
 For future works, the natural extension of this project would be to enable real-time action recognition on video or camera stream. We would also be exploring the possibility of combining the current popular approaches with our model through Emsemble methods to see if better results could be achieved.
+
+## Objective
+Amidst the Covid-19 situation, most people are working from home and not really allowed to go out.
+
+Therefore, we intend to make a real time human pose action recognition through webcam, which allow people at home to exercise in a fun game-like environment.
+
+By following the sequence of movement ordered, which will be detected by the system, user can get scores.
+
+Through this game, we are hoping can get some exercise and stay healthy despite the current situation.
