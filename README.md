@@ -117,7 +117,6 @@ def process_ucf_11_dataset():
 process_ucf_11_dataset()
 ```
 
-
 ## Load Dataset and Extract Features
 ```python
 # Load dataset. This will take some time for the first loading
@@ -152,6 +151,24 @@ y_pred_log = logreg.predict(x_test)
 print("LogReg accuracy on D3G Dataset:", metrics.accuracy_score(y_test, y_pred_log))
 ```
 
+
+## Visualisationg of Pose Estimation 
+```python
+# sample frame from G3D dataset
+visualise_pose_estimation('images/example_1.png', 'images/example_1_pose.jpg')
+```
+Good example:
+The pose estimation performs well on G3D dataset leading to a high classification accuracy.
+![example_1](images/example_1.jpg)   ![example_1_pose](images/example_1_pose.jpg) 
+
+Bad examples:
+As you can see here, the pose estimation does not work as well in UCF11 dataset. This might explain the lower accuracy achieved in the final classification.
+![example_3](images/example_3.jpg)   ![example_3_pose](images/example_3_pose.jpg) 
+
+The pose estimation performs even worser when the subject doing the action is not in the center of the frame and when there are multiple subjects in the frame.
+![example_2](images/example_2.jpg)   ![example_2_pose](images/example_2_pose.jpg) 
+
+
 ## Prediction
 ```python
 def predict_action(video_path, model):
@@ -174,11 +191,14 @@ video
 ```
 
 ## Discussion
-Our project was a great example of Transfer Learning. The model trained previously for human gait recognition was extended here to recognize general human actions.
+Our project was a great example of Transfer Learning. The model trained previously for human gait recognition was extended here to recognize general human actions. 
 
-One advantage of our model for human action recognition was that it extracted only the spatial and temporal information of the human pose, thus excluding the background noises. It does not work well, as we had observed, on frames where the human subject was not in the center or was partially blocked.
+One advantage of our model for human action recognition was that it extracted only the spatial and temporal information of the human pose, thus excluding the background noises. It does not work well, as we had observed, on frames where the human subject was decentralized or partially blocked or when there were multiple subjects.
+
+To further improve the classification accuracy especially on UCF11 and UCF101 datasets, we have to standardize the video frames so that the subject performing the action is centralized and at a profile view. As we have seen from the visualization of pose estimation, some frames were wrongly estimated leading to the inaccurate results. 
 
 For future works, the natural extension of this project would be to enable real-time action recognition on video or camera stream. We would also be exploring the possibility of combining the current popular approaches with our model through Emsemble methods to see if better results could be achieved.
+
 
 
 ## Applications
