@@ -2,7 +2,8 @@
 We implemented a deep neural network to predict human actions by modifying the gait recognition model by Marian Margeta (https://github.com/marian-margeta/gait-recognition). We extracted the spatial features of the human poses of each frame and extract their temporal features by running them through a Recurrent Neural Network. At last, we classify the human actions with a Logistic Regression Model using the temporal features as input.
 
 
-## Datasets Used
+
+## Datasets
 
 1. https://www.crcv.ucf.edu/data/UCF_YouTube_Action.php
 
@@ -16,15 +17,19 @@ We implemented a deep neural network to predict human actions by modifying the g
 
     D3G Dataset: G3D dataset contains a range of gaming actions captured with Microsoft Kinect. The Kinect enabled us to record synchronised video, depth and skeleton data. The dataset contains 10 subjects performing 20 gaming actions, from which we selected 7 categories: punch right, punch left, kick right, kick left, wave, flap arms and clap.
 
+
 ## Results
 We were able to achieve a 94.87% accuracy on D3G dataset, 74.24% accuracy on UCF11 dataset, and 64.55% accuracy on UCF101 dataset.
+
 
 ## Jupyter Notebook
 Go to [humanpose-rnn-action-recognition.ipynb](humanpose-rnn-action-recognition.ipynb) for our main works. 
 
+
 ## Basic information about architecture
 
 ![Architecture](images/architecture.jpg)
+
 
 ## Extract features
 
