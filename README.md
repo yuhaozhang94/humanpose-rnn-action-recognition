@@ -204,6 +204,8 @@ For future works, the natural extension of this project would be to enable real-
 ## Applications
 Amidst the Covid-19 situation, most people are advised to stay home.
 
-We intend to make a webcam game based on real-time action recognition, which could encourage people to exercise at home while having fun.
+We intend to make a webcam game based on real-time action recognition, which could encourage people to exercise at home while having fun. The game would ask the players to do a certain sequeunce of actions and score them based on how well they did as captured on camera.
 
-The game would ask the players to do a certain sequeunce of actions and score them based on how well they did as captured on camera.  
+During school closure where home-based learning, teachers can also use this to teach Physical Education by getting students to perform certain actions such as stretching exercises, jumping jacks, running on the spot, etc. The webcam will rate the actions according to a scoring and turn this into a form of gamification.
+
+This can also be used for training specific moves, such as dance or martial arts. This can be set in a self-learning mode where a person can practise certain moves on his/her own repeatedly in order to perfect the action.
