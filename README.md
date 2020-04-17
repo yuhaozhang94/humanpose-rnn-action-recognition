@@ -164,6 +164,7 @@ predict_action(sample_video_path, logreg)
 video = Video.from_file(sample_video_path)
 video
 ```
+![video](samples/test_7.mp4)
 
 ## Discussion
 Our project was a great example of Transfer Learning. The model trained previously for human gait recognition was extended here to recognize general human actions.
@@ -172,11 +173,10 @@ One advantage of our model for human action recognition was that it extracted on
 
 For future works, the natural extension of this project would be to enable real-time action recognition on video or camera stream. We would also be exploring the possibility of combining the current popular approaches with our model through Emsemble methods to see if better results could be achieved.
 
-## Objective
-Amidst the Covid-19 situation, most people are working from home and not really allowed to go out.
 
-Therefore, we intend to make a real time human pose action recognition through webcam, which allow people at home to exercise in a fun game-like environment.
+## Applications
+Amidst the Covid-19 situation, most people are advised to stay home.
 
-By following the sequence of movement ordered, which will be detected by the system, user can get scores.
+We intend to make a webcam game based on real-time action recognition, which could encourage people to exercise at home while having fun.
 
-Through this game, we are hoping can get some exercise and stay healthy despite the current situation.
+The game would ask the players to do a certain sequeunce of actions and score them based on how well they did as captured on camera.  
