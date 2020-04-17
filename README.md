@@ -208,4 +208,4 @@ We intend to make a webcam game based on real-time action recognition, which cou
 
 During school closure where home-based learning takes place, teachers can also use this to teach Physical Education by getting students to perform certain actions such as stretching exercises, jumping jacks, running on the spot, etc. The webcam can capture their actions and a rating can be given according to a scoring, turning this into a form of gamification.
 
-This can also be used for training specific moves, such as dance or martial arts. This can be set in a self-learning mode where a person can practise certain moves on his/her own repeatedly in order to perfect the action.
+This can also be used for training specific moves, such as dance or martial arts. This can be set in a self-learning mode where a person can practise certain moves on his/her own repeatedly in order to perfect the action. The webcam captures the move and a scoring is provided for the action as a form of advice on how well the action matches the ideal move.
