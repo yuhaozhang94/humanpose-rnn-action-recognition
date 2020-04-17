@@ -200,7 +200,40 @@ To further improve the classification accuracy especially on UCF11 and UCF101 da
 
 Another reason that the classification accuracy is higher on D3G might be because that D3G comprises of basic actions while the actions from UCF11 dataset are more complex. 
 
+### Webcam.py
 For future works, the natural extension of this project would be to enable real-time action recognition on video or camera stream. We would also be exploring the possibility of combining the current popular approaches with our model through Ensemble methods to see if better results could be achieved.
+
+```python
+cv2.namedWindow("preview")
+vc = cv2.VideoCapture(0)
+
+# Predict action every N frames
+N = 70
+last_N_frame = []
+
+if vc.isOpened():
+    rval, frame = vc.read()
+else:
+    rval = False
+
+while rval:
+    cv2.imshow("preview", frame)
+    rval, frame = vc.read()
+    if len(last_N_frame) > N:
+        temporal = extract_features(last_N_frame)
+        prediction = logistic_model.predict([temporal])
+        print("Predict Action:", G3D_CATEGORIES[prediction[0]])
+        last_N_frame.clear()
+    processed = imresize(frame, [299,299])
+    last_N_frame.append(processed)
+    key = cv2.waitKey(20)
+    if key==27:
+        break
+
+cv2.destroyWindow("preview")
+```
+
+Currently, the real-time action recognition on webcam does not perform as well as on videos.
 
 
 ## Applications
