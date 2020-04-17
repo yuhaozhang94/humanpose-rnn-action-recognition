@@ -2,7 +2,7 @@
 We implemented a deep neural network to predict human actions by modifying the gait recognition model by Marian Margeta (https://github.com/marian-margeta/gait-recognition). We extracted the spatial features of the human poses of each frame and extract their temporal features by running them through a Recurrent Neural Network. At last, we classify the human actions with a Logistic Regression Model using the temporal features as input.
 
 
-# Datasets Used
+## Datasets Used
 
 1. https://www.crcv.ucf.edu/data/UCF_YouTube_Action.php
 
@@ -71,6 +71,7 @@ net_pose.restore('models/MPII+LSP.ckpt')
 net_gait.restore('models/H3.6m-GRU-1.ckpt')
 ```
 
+
 ## Data Preprocessing
 ```python
 # process video as frames and save them as jpeg
@@ -111,11 +112,13 @@ def process_ucf_11_dataset():
 process_ucf_11_dataset()
 ```
 
+
 ## Load Dataset and Extract Features
 ```python
 # Load dataset. This will take some time for the first loading
 x, y = load_ucf_11_dataset()
 ```
+
 ## Load Processed Data from .csv Files
 ```python
 # Load train and test data from saved csv
