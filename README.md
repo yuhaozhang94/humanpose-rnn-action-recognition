@@ -164,7 +164,6 @@ predict_action(sample_video_path, logreg)
 video = Video.from_file(sample_video_path)
 video
 ```
-![video](samples/test_7.mp4)
 
 ## Discussion
 Our project was a great example of Transfer Learning. The model trained previously for human gait recognition was extended here to recognize general human actions.
