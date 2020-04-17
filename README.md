@@ -152,21 +152,21 @@ print("LogReg accuracy on D3G Dataset:", metrics.accuracy_score(y_test, y_pred_l
 ```
 
 
-## Visualisationg of Pose Estimation 
+## Visualisation of Pose Estimation 
 ```python
 # sample frame from G3D dataset
 visualise_pose_estimation('images/example_1.png', 'images/example_1_pose.jpg')
 ```
 Good example:
 The pose estimation performs well on G3D dataset leading to a high classification accuracy.
-![example_1](images/example_1.jpg)   ![example_1_pose](images/example_1_pose.jpg) 
+![example_1_pose](images/example_1_pose.jpg) 
 
 Bad examples:
 As you can see here, the pose estimation does not work as well in UCF11 dataset. This might explain the lower accuracy achieved in the final classification.
-![example_3](images/example_3.jpg)   ![example_3_pose](images/example_3_pose.jpg) 
+!![example_3_pose](images/example_3_pose.jpg) 
 
 The pose estimation performs even worser when the subject doing the action is not in the center of the frame and when there are multiple subjects in the frame.
-![example_2](images/example_2.jpg)   ![example_2_pose](images/example_2_pose.jpg) 
+![example_2_pose](images/example_2_pose.jpg) 
 
 
 ## Prediction
