@@ -163,7 +163,7 @@ The pose estimation performs well on G3D dataset leading to a high classificatio
 
 Bad examples:
 As you can see here, the pose estimation does not work as well in UCF11 dataset. This might explain the lower accuracy achieved in the final classification.<br>
-!![example_3_pose](images/example_3_pose.jpg) <br>
+![example_3_pose](images/example_3_pose.jpg) <br>
 
 The pose estimation performs even worser when the subject doing the action is not in the center of the frame and when there are multiple subjects in the frame.<br>
 ![example_2_pose](images/example_2_pose.jpg) <br>
